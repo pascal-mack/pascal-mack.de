@@ -1,0 +1,57 @@
+<!--
+Contact: mail@pascal-mack.de
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        font-size: 80px;
+        width: 200px;
+        display: block;
+        margin: 45vh auto 0 auto;
+        font-family: "Baloo 2";
+        position: relative;
+        left: 20px;
+      }
+      .mid {
+        position: absolute;
+        width: 50vw;
+        height: 100px;
+      }
+      .pulsate {
+        -webkit-animation: pulsate 10s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.5;
+      }
+      @-webkit-keyframes pulsate {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="pulsate">soon</p>
+    <div class="mid"></div>
+  </body>
+</html>
